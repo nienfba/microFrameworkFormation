@@ -1,0 +1,5 @@
+vendor/
+test/
+node_modules/
+cache/
+config/config.php

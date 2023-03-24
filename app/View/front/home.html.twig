@@ -1,0 +1,23 @@
+{% extends "layout.html.twig" %}
+
+{% block main %}
+<section class="container-fluid row">
+    {% for product in products %}
+    <article class="col-2">
+        <img class="img-fluid" src="{{ product.picture }}">
+        <div class="row mb-2">
+            <div class="col-8">
+                <h1>{{ product.name }}</h1>
+                <p class="badge text-bg-info">{{ product.price|format_currency('EUR') }} HT</p>
+            </div>
+            <div class="col-4 mt-2 text-end">
+                <p><a href="{{ app.path('home','product', {id:product.id} ) }}" class="btn btn-dark">Detail</a></p>
+            </div>
+        </div>
+        
+
+        
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

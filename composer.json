@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Fab\\": "app/"
+        }
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.21"
+    },
+    "require": {
+        "twig/twig": "^3.5",
+        "twig/intl-extra": "^3.5"
+    }
+}
